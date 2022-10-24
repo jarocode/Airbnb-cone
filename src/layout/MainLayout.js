@@ -8,22 +8,13 @@ import Footer from "./Footer";
 const MainLayout = ({ children }) => {
   return (
     <Container>
-      <Inner>
-        <Header />
-        {children}
-        <Footer />
-      </Inner>
+      <Header />
+      {children}
+      <Footer />
     </Container>
   );
 };
 
 export default MainLayout;
 
-const Container = styled.div`
-  display: flex;
-  margin: auto;
-`;
-const Inner = styled.div`
-  display: flex;
-  margin: auto;
-`;
+const Container = styled.div``;
